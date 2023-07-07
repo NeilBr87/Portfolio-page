@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: left;
+    color: #003049;
+    margin-top: 10%;    
+    padding-bottom: 60px;
+    animation: fadeIn 1s ease-in-out;
+    font-family: 'Quicksand', sans-serif !important;
+}
+.profile {
+    width: 12%;
+    border-radius: 50%;
+    border: 5px solid #003049;
+}
+
+#heading1 {
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+@keyframes fadeIn {
+    0% {
+      filter : blur(10px);
+      opacity: 0;
+    }
+    100% {
+      filter : blur(0px);
+      opacity: 1;
+    }
+  }

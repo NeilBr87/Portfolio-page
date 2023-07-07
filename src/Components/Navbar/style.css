@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.navbar {
+    animation: fadeIn 0.5s ease-in-out;
+    font-family: 'Quicksand', sans-serif !important;
+}
+
+.navbarItems {
+    position: relative;
+    color: inherit !important;
+  text-decoration: none !important;
+}
+
+.navbarItems::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.navbarItems:hover::after {
+    background-color: white;
+}
+
+@keyframes fadeIn {
+    0% {
+      filter : blur(10px);
+      opacity: 0;
+    }
+    100% {
+      filter : blur(0px);
+      opacity: 1;
+    }
+  }
