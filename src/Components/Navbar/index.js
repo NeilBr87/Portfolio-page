@@ -20,8 +20,8 @@ export default function Navbar(props) {
         flexDirection: 'row', 
         justifyContent: 'center', 
         gap: isMobile ? '33px' : '300px', 
-        pt: isMobile? '15px' : '30px', 
-        pb: isMobile? '15px' : '30px',}}>
+        pt: isMobile? '15px' : '18px', 
+        pb: isMobile? '15px' : '18px',}}>
             <a href="/" style={{color: 'inherit', textDecoration: 'none'}}>
             <Typography className="navbarItems" sx={{fontWeight: isMobile? '500' : 'bold', fontSize: isMobile? '15px' : '18px', color: 'white', textDecoration: 'none'}}>Home</Typography>
             </a>
@@ -30,7 +30,11 @@ export default function Navbar(props) {
                     Portfolio
             </Typography>
             </a>
-            <Typography className="navbarItems" sx={{fontWeight: isMobile? '500' : 'bold', fontSize: isMobile? '15px' : '18px'}}>More</Typography>
+
+            <a href="/moreabout" style={{color: 'inherit', textDecoration: 'none'}}>
+                <Typography className="navbarItems" sx={{fontWeight: isMobile? '500' : 'bold', fontSize: isMobile? '15px' : '18px'}}>More</Typography>
+            </a>
+    
             <a href="https://flowcv.com/resume/wq8nbagsjb" style={{color: 'inherit', textDecoration: 'none'}}>
                 <Typography className="navbarItems" sx={{fontWeight: isMobile ? '500' : 'bold', fontSize: isMobile ? '15px' : '18px', color: 'inherit', textDecoration: 'none'}}>
                     My CV

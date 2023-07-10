@@ -5,6 +5,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import PortfolioCard from '../PortfolioCard';
 import Box from '@mui/material/Box';
+import Html from './html.JPG';
 
 export default function Portfolio() {
 
@@ -14,13 +15,30 @@ export default function Portfolio() {
     return (
         <div>
             <Navbar />
-            <Typography sx={{fontWeight: 'bold', textAlign: 'center', fontSize: isMobile? '18px' : '25px', mt: isMobile? '6%' : "3.5%"}}>Thanks for checking out my portfolio!</Typography>
+            <Typography sx={{fontWeight: 'bold', textAlign: 'center', fontSize: isMobile? '18px' : '25px', mt: isMobile? '6%' : "1.2%"}}>Thanks for checking out my portfolio!</Typography>
                 
+                <Box sx={{backgroundColor: 'white', width: '600px', margin: '0 auto', padding: '20px', mt: '20px', boxShadow: '0px 3px 5px rgba(0.5, 0.5, 0.7, 0.7)', borderRadius: '10px'}}>
+                    <Typography sx={{mt: isMobile? '5%': '0.1%', mb: '10px', textAlign: 'center', fontWeight: 'bold'}} >Tech stack I'm familiar with</Typography>
+                    <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '20px'}}>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="html logo" style={{width: '50px', height: '50px'}}/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="css logo" style={{width: '45px', height: '50px'}}/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png" alt="javascript logo" style={{width: '50px', height: '50px'}}/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="react logo" style={{width: '50px', height: '50px'}}/>
+                    <img src="https://db.cs.uni-tuebingen.de/teaching/ws2223/sql-is-a-programming-language/logo.svg" alt="sql logo" style={{width: '50px', height: '50px'}}/>
+                    <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="supabase logo" style={{width: '45px', height: '50px'}}/>
+                    <img src="https://miro.medium.com/v2/resize:fit:600/1*i37IyHf6vnhqWIA9osxU3w.png" alt="jest logo" style={{width: '45px', height: '50px'}}/>
+                    <img src="https://playwright.dev/img/playwright-logo.svg" alt="playwrite logo" style={{width: '50px', height: '50px'}}/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png" alt="figma logo" style={{width: '40px', height: '45px'}}/>
+                    
+                    </Box>
                 
-                <Box sx={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'center', alignItems: isMobile? 'center' : 'baseline', mt: '30px', gap: '40px'}}>
+                </Box>
+
+
+                <Box sx={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'center', alignItems: isMobile? 'center' : 'baseline', mt: '15px', gap: '40px'}}>
 
                     <Box sx={{display: 'flex', flexDirection: 'column',}}>
-                        <Typography variant="h5" sx={{mb: isMobile? '20px' : '40px', textAlign: 'center'}} >Major group projects</Typography>
+                        <Typography variant="h5" sx={{mb: isMobile? '20px' : '16px', textAlign: 'center'}} >Major group projects</Typography>
 
                         <Box sx={{display: 'flex', flexDirection: isMobile? 'column' : 'row', gap: '20px'}}>
 
@@ -48,7 +66,7 @@ export default function Portfolio() {
 
                     <Box sx={{display: 'flex', flexDirection: 'column',}}>
 
-                    <Typography variant="h5" sx={{mt: '20px', mb: '40px', textAlign: 'center'}} >Completed solo projects</Typography>
+                    <Typography variant="h5" sx={{mt: '20px', mb: '16px', textAlign: 'center'}} >Completed solo projects</Typography>
                     <Box sx={{display: 'flex', flexDirection: isMobile? 'column' : 'row', gap: '20px'}}>
                         <PortfolioCard 
                             itemImage="Mysite" 
@@ -74,7 +92,7 @@ export default function Portfolio() {
 
                 </Box>
 
-                <Typography variant="h4" sx={{mt: isMobile? '5%': '3.5%', mb: '10px', textAlign: 'center'}} >Watch this space!</Typography>
+                <Typography variant="h4" sx={{mt: isMobile? '5%': '1.5%', mb: '10px', textAlign: 'center'}} >Watch this space!</Typography>
                 
                 {/* <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'baseline', mt: '10px', gap: '40px'}}>
 
@@ -101,7 +119,7 @@ export default function Portfolio() {
                     </Box>
                 </Box> */}
                 {/* </Box> */}
-            <Typography className="footerBar123" sx={{ color: 'white', backgroundColor: '#003049', mt: isMobile? '35px' : '80px', padding: '10px', display: 'flex', justifyContent: 'center' }}>Created by Neil Brooks, 2023</Typography>
+            <Typography className="footerBar123" sx={{ color: 'white', backgroundColor: '#003049', mt: isMobile? '35px' : '48px', padding: '10px', display: 'flex', justifyContent: 'center' }}>Created by Neil Brooks, 2023</Typography>
 
         </div>
     )

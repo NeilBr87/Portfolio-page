@@ -6,6 +6,7 @@ import Connect from '../Connect';
 import Navbar from '../Navbar';
 import Portfolio from '../Portfolio';
 import Typography from '@mui/material/Typography';
+import MoreAbout from '../MoreAbout';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/portfoliopage" element={<Portfolio />} />
+        <Route path="/moreabout" element={<MoreAbout />} />
       </Routes>
     </div>
   );
