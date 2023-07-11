@@ -5,7 +5,6 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import PortfolioCard from '../PortfolioCard';
 import Box from '@mui/material/Box';
-import Html from './html.JPG';
 
 export default function Portfolio() {
 
@@ -17,18 +16,18 @@ export default function Portfolio() {
             <Navbar />
             <Typography sx={{fontWeight: 'bold', textAlign: 'center', fontSize: isMobile? '18px' : '25px', mt: isMobile? '6%' : "1.2%"}}>Thanks for checking out my portfolio!</Typography>
                 
-                <Box sx={{backgroundColor: 'white', width: '600px', margin: '0 auto', padding: '20px', mt: '20px', boxShadow: '0px 3px 5px rgba(0.5, 0.5, 0.7, 0.7)', borderRadius: '10px'}}>
-                    <Typography sx={{mt: isMobile? '5%': '0.1%', mb: '10px', textAlign: 'center', fontWeight: 'bold'}} >Tech stack I'm familiar with</Typography>
-                    <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '20px'}}>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="html logo" style={{width: '50px', height: '50px'}}/>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="css logo" style={{width: '45px', height: '50px'}}/>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png" alt="javascript logo" style={{width: '50px', height: '50px'}}/>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="react logo" style={{width: '50px', height: '50px'}}/>
-                    <img src="https://db.cs.uni-tuebingen.de/teaching/ws2223/sql-is-a-programming-language/logo.svg" alt="sql logo" style={{width: '50px', height: '50px'}}/>
-                    <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="supabase logo" style={{width: '45px', height: '50px'}}/>
-                    <img src="https://miro.medium.com/v2/resize:fit:600/1*i37IyHf6vnhqWIA9osxU3w.png" alt="jest logo" style={{width: '45px', height: '50px'}}/>
-                    <img src="https://playwright.dev/img/playwright-logo.svg" alt="playwrite logo" style={{width: '50px', height: '50px'}}/>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png" alt="figma logo" style={{width: '40px', height: '45px'}}/>
+                <Box sx={{backgroundColor: 'white', width: isMobile ? '280px' : '600px', margin: '0 auto', padding: '20px', mt: '20px', boxShadow: '0px 3px 5px rgba(0.5, 0.5, 0.7, 0.7)', borderRadius: '10px'}}>
+                    <Typography sx={{mt: isMobile? '-3.6%': '0.1%', mb: '10px', textAlign: 'center', fontWeight: 'bold'}} >Tech stack I'm familiar with</Typography>
+                    <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: isMobile? '2px' : '20px'}}>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="html logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png" alt="css logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png" alt="javascript logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="react logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
+                    <img src="https://db.cs.uni-tuebingen.de/teaching/ws2223/sql-is-a-programming-language/logo.svg" alt="sql logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
+                    <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="supabase logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
+                    <img src="https://miro.medium.com/v2/resize:fit:600/1*i37IyHf6vnhqWIA9osxU3w.png" alt="jest logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
+                    <img src="https://playwright.dev/img/playwright-logo.svg" alt="playwrite logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png" alt="figma logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
                     
                     </Box>
                 
@@ -119,7 +118,7 @@ export default function Portfolio() {
                     </Box>
                 </Box> */}
                 {/* </Box> */}
-            <Typography className="footerBar123" sx={{ color: 'white', backgroundColor: '#003049', mt: isMobile? '35px' : '48px', padding: '10px', display: 'flex', justifyContent: 'center' }}>Created by Neil Brooks, 2023</Typography>
+            <Typography className="footerBar123" sx={{ color: 'white', backgroundColor: '#003049', mt: isMobile? '30px' : '48px', padding: '10px', display: 'flex', justifyContent: 'center' }}>Created by Neil Brooks, 2023</Typography>
 
         </div>
     )
