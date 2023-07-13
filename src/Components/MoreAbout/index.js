@@ -8,7 +8,7 @@ import USA from './usa.jpg';
 import bryceCanyon from './bryceCanyon.jpg';
 import scotland from './scotland.jpg';
 import sriLanka from './sriLanka.jpg';
-
+import './style.css';
 
 export default function MoreAbout() {
 
@@ -17,15 +17,15 @@ export default function MoreAbout() {
 
 
     return (
-        <Box>
+        <Box className="moreAboutFade">
 
             <Navbar />
 
-            <Box sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+            <Box className="moreAboutFade" sx={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                 <Typography sx={{fontSize: isMobile? '21px' : '27px', mt: '30px'}}>Here's some more about me!</Typography>
             </Box>
 
-            <Box sx={{display: 'flex', flexDirection: isMobile? 'column' : 'row', justifyContent: 'center', alignItems: isMobile? 'center' :  'flex-start', gap: '40px', mt: '30px'}}>
+            <Box className="moreAboutFade" sx={{display: 'flex', flexDirection: isMobile? 'column' : 'row', justifyContent: 'center', alignItems: isMobile? 'center' :  'flex-start', gap: '40px', mt: '30px'}}>
 
                 <Box sx={{backgroundColor: '#003049', color: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: isMobile? '350px' : '800px', borderRadius: '10px', boxShadow: '0px 3px 5px rgba(0.5, 0.5, 0.7, 0.7)'}}>
                     <Typography sx={{fontSize: '20px', fontWeight: 'bold', mt: '15px'}}>Work</Typography>
@@ -44,7 +44,7 @@ export default function MoreAbout() {
                     <Typography sx={{fontSize: isMobile? '14px' : '16px', width: isMobile? '330px' : '700px', textAlign: 'center', mt: isMobile? '10px' : '18px', mb: '10px'}}>I'm eager to talk more about ISI and my other roles, but the UI designer in me says that this wall of text shouldn't be too much bigger! So please see my CV via the navbar for more.</Typography>
                 </Box>
             
-                <Box sx={{backgroundColor: '#003049', color: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: isMobile? '350px' : '800px', mb: '20px', borderRadius: '10px', boxShadow: '0px 3px 5px rgba(0.5, 0.5, 0.7, 0.7)'}}>
+                <Box classname="moreAboutFade" sx={{backgroundColor: '#003049', color: 'white', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', width: isMobile? '350px' : '800px', mb: '20px', borderRadius: '10px', boxShadow: '0px 3px 5px rgba(0.5, 0.5, 0.7, 0.7)'}}>
                 <Typography sx={{fontSize: '20px', fontWeight: 'bold', mt: '15px'}}>Everything else</Typography>
 
                 <Box sx={{display: 'flex', flexDirection: 'row', gap: '8px', mt: '25px'}}>

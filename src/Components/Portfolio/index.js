@@ -5,6 +5,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import PortfolioCard from '../PortfolioCard';
 import Box from '@mui/material/Box';
+import './style.css';
 
 export default function Portfolio() {
 
@@ -14,9 +15,9 @@ export default function Portfolio() {
     return (
         <div>
             <Navbar />
-            <Typography sx={{fontWeight: 'bold', textAlign: 'center', fontSize: isMobile? '18px' : '25px', mt: isMobile? '6%' : "1.2%"}}>Thanks for checking out my portfolio!</Typography>
+            <Typography className="techStack" sx={{fontWeight: 'bold', textAlign: 'center', fontSize: isMobile? '18px' : '25px', mt: isMobile? '6%' : "1.2%"}}>Thanks for checking out my portfolio!</Typography>
                 
-                <Box sx={{backgroundColor: 'white', width: isMobile ? '280px' : '600px', margin: '0 auto', padding: '20px', mt: '20px', boxShadow: '0px 3px 5px rgba(0.5, 0.5, 0.7, 0.7)', borderRadius: '10px'}}>
+                <Box className="techStack" sx={{backgroundColor: 'white', width: isMobile ? '280px' : '600px', margin: '0 auto', padding: '20px', mt: '20px', boxShadow: '0px 3px 5px rgba(0.5, 0.5, 0.7, 0.7)', borderRadius: '10px'}}>
                     <Typography sx={{mt: isMobile? '-3.6%': '0.1%', mb: '10px', textAlign: 'center', fontWeight: 'bold'}} >Tech stack I'm familiar with</Typography>
                     <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: isMobile? '2px' : '20px'}}>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="html logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
@@ -34,10 +35,10 @@ export default function Portfolio() {
                 </Box>
 
 
-                <Box sx={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'center', alignItems: isMobile? 'center' : 'baseline', mt: '15px', gap: '40px'}}>
+                <Box className="portfolioArea" sx={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'center', alignItems: isMobile? 'center' : 'baseline', mt: '15px', gap: '40px'}}>
 
-                    <Box sx={{display: 'flex', flexDirection: 'column',}}>
-                        <Typography variant="h5" sx={{mb: isMobile? '20px' : '16px', textAlign: 'center'}} >Major group projects</Typography>
+                    <Box className="portfolioArea" sx={{display: 'flex', flexDirection: 'column',}}>
+                        <Typography className="" variant="h5" sx={{mb: isMobile? '20px' : '16px', textAlign: 'center'}} >Major group projects</Typography>
 
                         <Box sx={{display: 'flex', flexDirection: isMobile? 'column' : 'row', gap: '20px'}}>
 
@@ -91,7 +92,7 @@ export default function Portfolio() {
 
                 </Box>
 
-                <Typography variant="h4" sx={{mt: isMobile? '5%': '1.5%', mb: '10px', textAlign: 'center', fontSize: isMobile ? '25px' : '35x'}} >Watch this space!</Typography>
+                <Typography className="portfolioArea" variant="h4" sx={{mt: isMobile? '5%': '1.5%', mb: '10px', textAlign: 'center', fontSize: isMobile ? '25px' : '35x'}} >Watch this space!</Typography>
                 
                 {/* <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'baseline', mt: '10px', gap: '40px'}}>
 
@@ -118,7 +119,7 @@ export default function Portfolio() {
                     </Box>
                 </Box> */}
                 {/* </Box> */}
-            <Typography className="footerBar123" sx={{ color: 'white', backgroundColor: '#003049', mt: isMobile? '30px' : '48px', padding: '10px', display: 'flex', justifyContent: 'center' }}>Created by Neil Brooks, 2023</Typography>
+            <Typography id="portfolioFooter" sx={{ color: 'white', backgroundColor: '#003049', mt: isMobile? '30px' : '48px', padding: '10px', display: 'flex', justifyContent: 'center' }}>Created by Neil Brooks, 2023</Typography>
 
         </div>
     )

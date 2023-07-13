@@ -1,0 +1,22 @@
+.techStack{
+    animation: fadeIn 1.5s ease-in-out !important;
+}
+
+.portfolioArea{
+    animation: fadeIn 2s ease-in-out !important;
+}
+
+#portfolioFooter{
+    animation: fadeIn 2.5s ease-in-out !important;
+}
+
+@keyframes fadeIn {
+    0% {
+      filter : blur(10px);
+      opacity: 0;
+    }
+    100% {
+      filter : blur(0px);
+      opacity: 1;
+    }
+  }
