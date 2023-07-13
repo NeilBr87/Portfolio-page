@@ -4,8 +4,6 @@ import { Typography } from '@mui/material';
 import './style.css';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-import { Link } from 'react-router-dom';
-import { Routes, Route } from "react-router-dom";
 
 export default function Navbar(props) {
 

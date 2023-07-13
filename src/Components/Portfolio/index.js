@@ -55,7 +55,7 @@ export default function Portfolio() {
                                 itemTitle="Haccio"
                                 itemDescription="Haccio was my team's Week 7 project. We had a week to ideate, plan and code a React app that addressed a specific problem for bootcampers."
                                 itemDesc2="The problem we chose involved asking for help from the right people. Users would theoretically set their proficiencly levels in HTML, JS, etc, and be notified when other users had issues with those languages."
-                                githubLink="https://github.com/latifahassan/final-project-swapping-app"
+                                githubLink="https://github.com/NeilBr87/Haccio"
                                 appLink=""
                             />
 
@@ -65,15 +65,15 @@ export default function Portfolio() {
 
                     <Box sx={{display: 'flex', flexDirection: 'column',}}>
 
-                    <Typography variant="h5" sx={{mt: '20px', mb: '16px', textAlign: 'center'}} >Completed solo projects</Typography>
+                    <Typography variant="h5" sx={{mt: '20px', mb: '16px', textAlign: 'center'}} >Solo projects</Typography>
                     <Box sx={{display: 'flex', flexDirection: isMobile? 'column' : 'row', gap: '20px'}}>
                         <PortfolioCard 
                             itemImage="Mysite" 
                             itemTitle="My portfolio page" 
                             itemDescription="My first proper project after finishing the bootcamp - this very website!" 
                             itemDesc2="This site has been compiled with React using MaterialUI for formatting and responsiveness. It has two goals: to give prospective employers and others a sense of who I am, and to give me a chance to keep my React skills strong."
-                            githubLink="https://github.com/latifahassan/final-project-swapping-app"
-                            appLink="https://swappbitbybit.netlify.app/"
+                            githubLink="https://github.com/NeilBr87/Portfolio-page"
+                            appLink="/"
                             />
                         <PortfolioCard
                             itemImage="SOC"
@@ -91,7 +91,7 @@ export default function Portfolio() {
 
                 </Box>
 
-                <Typography variant="h4" sx={{mt: isMobile? '5%': '1.5%', mb: '10px', textAlign: 'center'}} >Watch this space!</Typography>
+                <Typography variant="h4" sx={{mt: isMobile? '5%': '1.5%', mb: '10px', textAlign: 'center', fontSize: isMobile ? '25px' : '35x'}} >Watch this space!</Typography>
                 
                 {/* <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'baseline', mt: '10px', gap: '40px'}}>
 
