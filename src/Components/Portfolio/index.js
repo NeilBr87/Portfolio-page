@@ -57,7 +57,7 @@ export default function Portfolio() {
                                 itemDescription="Haccio was my team's Week 7 project. We had a week to ideate, plan and code a React app that addressed a specific problem for bootcampers."
                                 itemDesc2="The problem we chose involved asking for help from the right people. Users would theoretically set their proficiencly levels in HTML, JS, etc, and be notified when other users had issues with those languages."
                                 githubLink="https://github.com/NeilBr87/Haccio"
-                                appLink=""
+                                appLink="https://haccio.netlify.app/"
                             />
 
                         </Box>
