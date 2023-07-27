@@ -9,6 +9,7 @@ import Link from '@mui/material/Link';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import haccio from './Haccio.JPG';
 import Mysite from './Mysite.JPG';
+import SymptomSense from './SymptomSense.JPG';
 import SOC from './SOC.JPG';
 
 export default function PortfolioCard(props) {
@@ -27,6 +28,9 @@ export default function PortfolioCard(props) {
     }
     if (itemImage === 'SOC') {
         return SOC;
+    }
+    if (itemImage === 'SymptomSense') {
+        return SymptomSense;
     }
 
     return '';

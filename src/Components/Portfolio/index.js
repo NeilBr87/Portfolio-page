@@ -35,7 +35,7 @@ export default function Portfolio() {
                 </Box>
 
 
-                <Box className="portfolioArea" sx={{display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'center', alignItems: isMobile? 'center' : 'baseline', mt: '15px', gap: '40px'}}>
+                <Box className="portfolioArea" sx={{display: 'flex', flexDirection: isMobile ? 'column' : 'column', justifyContent: 'center', alignItems: isMobile? 'center' : 'center', mt: '15px', gap: '40px'}}>
 
                     <Box className="portfolioArea" sx={{display: 'flex', flexDirection: 'column',}}>
                         <Typography className="" variant="h5" sx={{mb: isMobile? '20px' : '16px', textAlign: 'center'}} >Major group projects</Typography>
@@ -68,6 +68,14 @@ export default function Portfolio() {
 
                     <Typography variant="h5" sx={{mt: '20px', mb: '16px', textAlign: 'center'}} >Solo projects</Typography>
                     <Box sx={{display: 'flex', flexDirection: isMobile? 'column' : 'row', gap: '20px'}}>
+                        <PortfolioCard
+                            itemImage="SymptomSense"
+                            itemTitle="SymptomSense"
+                            itemDescription="SymptomSense is an app I'm working on that will allow users to keep track of new, worrying symptoms. They will keep a daily track of these, making notes on whether they occur, times and/or severity."
+                            itemDesc2="I decided to create SymptomSense to expand in three areas I want to be more confident in - array mapping, authenication, and backend integration."
+                            githubLink=""
+                            appLink=""
+                        />
                         <PortfolioCard 
                             itemImage="Mysite" 
                             itemTitle="My portfolio page" 
