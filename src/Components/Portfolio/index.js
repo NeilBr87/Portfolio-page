@@ -73,8 +73,8 @@ export default function Portfolio() {
                             itemTitle="SymptomSense"
                             itemDescription="SymptomSense is an app I'm working on that will allow users to keep track of new, worrying symptoms. They will keep a daily track of these, making notes on whether they occur, times and/or severity."
                             itemDesc2="I decided to create SymptomSense to expand in three areas I want to be more confident in - array mapping, authenication, and backend integration."
-                            githubLink=""
-                            appLink=""
+                            githubLink="https://github.com/NeilBr87/SymptomSense"
+                            appLink="https://symptomsense.netlify.app/"
                         />
                         <PortfolioCard 
                             itemImage="Mysite" 

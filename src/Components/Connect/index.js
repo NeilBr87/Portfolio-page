@@ -21,9 +21,9 @@ export default function Connect(props) {
         justifyContent: 'center', 
         backgroundColor: '#003049', 
         pt: '40px',
-        width: isMobile? "320px": '430px', 
+        width: isMobile? "280px": '430px', 
         margin: '0 auto', color: 'white', padding: '20px', borderRadius: '10px', mt: '12px'}}>
-            <Box className="connect" sx={{ width: '330px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '5px', pb: '10px'}}>
+            <Box className="connect" sx={{ width: '280px', margin: '0 auto', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '5px', pb: '10px'}}>
                 <Typography sx={{fontSize: '20px', color: 'white', padding: '4px'}} className="heading1">Connect with me</Typography>
             </Box>
             <Box sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '30px'}}>
