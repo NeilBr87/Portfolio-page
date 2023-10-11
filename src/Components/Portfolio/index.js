@@ -68,6 +68,14 @@ export default function Portfolio() {
 
                     <Typography variant="h5" sx={{mt: '20px', mb: '16px', textAlign: 'center'}} >Solo projects</Typography>
                     <Box sx={{display: 'flex', flexDirection: isMobile? 'column' : 'row', gap: '20px'}}>
+                        <PortfolioCard 
+                            itemImage="Hitcher"
+                            itemTitle="Hitcher"
+                            itemDescription="Hitcher is an attempt to go back into the very early motivation for my learning to code - creating text adventures with complex logic. In Hitcher, you travel across Europe via hitchiking, managing your health, food, and money as you go."
+                            itemDesc2="The version included is an ongoing prototype primarily designed for mobile but with limited desktop support."
+                            githubLink="https://github.com/NeilBr87/Hitcher"
+                            appLink="https://hitcher.netlify.app/"
+                        />
                         <PortfolioCard
                             itemImage="SymptomSense"
                             itemTitle="SymptomSense"

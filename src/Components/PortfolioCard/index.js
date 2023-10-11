@@ -11,6 +11,7 @@ import haccio from './Haccio.JPG';
 import Mysite from './Mysite.JPG';
 import SymptomSense from './SymptomSense.JPG';
 import SOC from './SOC.JPG';
+import Hitcher from './Hitcher.JPG';
 
 export default function PortfolioCard(props) {
   const theme = useTheme();
@@ -31,6 +32,9 @@ export default function PortfolioCard(props) {
     }
     if (itemImage === 'SymptomSense') {
         return SymptomSense;
+    }
+    if (itemImage === 'Hitcher') {
+        return Hitcher;
     }
 
     return '';
