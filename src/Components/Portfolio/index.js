@@ -17,7 +17,7 @@ export default function Portfolio() {
             <Navbar />
             <Typography className="techStack" sx={{fontWeight: 'bold', textAlign: 'center', fontSize: isMobile? '18px' : '25px', mt: isMobile? '6%' : "1.2%"}}>Thanks for checking out my portfolio!</Typography>
                 
-                <Box className="techStack" sx={{backgroundColor: 'white', width: isMobile ? '280px' : '600px', margin: '0 auto', padding: '20px', mt: '20px', boxShadow: '0px 3px 5px rgba(0.5, 0.5, 0.7, 0.7)', borderRadius: '10px'}}>
+                <Box className="techStack" sx={{backgroundColor: 'white', width: isMobile ? '280px' : '640px', margin: '0 auto', padding: '20px', mt: '20px', boxShadow: '0px 3px 5px rgba(0.5, 0.5, 0.7, 0.7)', borderRadius: '10px'}}>
                     <Typography sx={{mt: isMobile? '-3.6%': '0.1%', mb: '10px', textAlign: 'center', fontWeight: 'bold'}} >Tech stack I'm familiar with</Typography>
                     <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: isMobile? '2px' : '20px'}}>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" alt="html logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
@@ -29,7 +29,7 @@ export default function Portfolio() {
                     <img src="https://miro.medium.com/v2/resize:fit:600/1*i37IyHf6vnhqWIA9osxU3w.png" alt="jest logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
                     <img src="https://playwright.dev/img/playwright-logo.svg" alt="playwrite logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Figma-logo.svg/1667px-Figma-logo.svg.png" alt="figma logo" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
-                    
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVhNUS5emquOnd63nSxHHhN3Ow_16X_rdokA&s" alt="wpEngine" style={{width: isMobile? '30px' : '50px', height: isMobile? '30px' : '50px'}}/>
                     </Box>
                 
                 </Box>

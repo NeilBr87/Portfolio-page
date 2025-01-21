@@ -28,7 +28,7 @@ export default function Topbar() {
             pb: '28px',}} className="topbar">
             <Box className="topbartext">
                 <Typography sx={{fontSize: isMobile? '36px' : '50px', fontweight: '900'}} id="heading1">Neil Brooks</Typography>
-                <Typography sx={{fontSize: isMobile? '20px' : '30px', fontweight: 'bold'}} className="heading2">Aspiring full-stack developer</Typography>
+                <Typography sx={{fontSize: isMobile? '20px' : '30px', fontweight: 'bold'}} className="heading2">Frontend and Wordpess Developer</Typography>
             </Box>
             <img style={{width: isMobile? '36%' : '12%', 
             borderRadius: '50%', 
