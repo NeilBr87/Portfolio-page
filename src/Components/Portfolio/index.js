@@ -68,8 +68,17 @@ export default function Portfolio() {
 
                     <Typography variant="h5" sx={{mt: '20px', mb: '16px', textAlign: 'center'}} >Solo projects</Typography>
                     <Box sx={{display: 'flex', flexDirection: isMobile? 'column' : 'row', gap: '20px'}}>
+                        
                         <PortfolioCard 
-                            itemImage="Hitcher"
+                            itemImage="Pulling Strings"
+                            itemTitle="Who's Pulling the Strings?"
+                            itemDescription="A new project designed to put me more into a React framework after some time working on Wordpress. Who's Pulling the Strings is intended as a data analysis of registered MP interests - specifically, who's paying them and for what."
+                            itemDesc2="It's got (currently scant) information on this from the most recent declaration of interests. I also made use of a wide range of parlaimentary APIs for my knowledge base."
+                            githubLink="https://github.com/NeilBr87/pulling-strings"
+                            appLink="https://whopullsthestrings.netlify.app/"
+                        />
+                        <PortfolioCard 
+                            itemImage="MyFirstNumbers"
                             itemTitle="My First Numbers"
                             itemDescription="My First Numbers started life as a simple countng game I created for my young nephew. He was uninterested in the counting games on his tablet so I made an alternative that would keep his interest by using images of family members as the objects."
                             itemDesc2="I wanted to make it a more general game and replaced the family member details - and audio - with generic, adaptable examples."
@@ -77,13 +86,14 @@ export default function Portfolio() {
                             appLink="https://my-first-numbers.netlify.app/"
                         />
                         <PortfolioCard
-                            itemImage="SymptomSense"
-                            itemTitle="SymptomSense"
-                            itemDescription="SymptomSense is an app I'm working on that will allow users to keep track of new, worrying symptoms. They will keep a daily track of these, making notes on whether they occur, times and/or severity."
-                            itemDesc2="I decided to create SymptomSense to expand in three areas I want to be more confident in - array mapping, authenication, and backend integration."
-                            githubLink="https://github.com/NeilBr87/SymptomSense"
-                            appLink="https://symptomsense.netlify.app/"
+                            itemImage="Hitcher"
+                            itemTitle="Hitcher"
+                            itemDescription="Hitcher is an attempt to go back into the very early motivation for my learning to code - creating text adventures with complex logic. In Hitcher, you travel across Europe via hitchiking, managing your health, food, and money as you go."
+                            itemDesc2="After I created a solid proof of concept with lots of random events I left Hitcher on Hiatus for a while, but I'm not finished with it."
+                            githubLink="https://github.com/NeilBr87/Hitcher"
+                            appLink="https://hitcher.netlify.app/"
                         />
+{/*                         
                         <PortfolioCard 
                             itemImage="Mysite" 
                             itemTitle="My portfolio page" 
@@ -91,7 +101,7 @@ export default function Portfolio() {
                             itemDesc2="This site has been compiled with React using MaterialUI for formatting and responsiveness. It has two goals: to give prospective employers and others a sense of who I am, and to give me a chance to keep my React skills strong."
                             githubLink="https://github.com/NeilBr87/Portfolio-page"
                             appLink="/"
-                            />
+                            /> */}
                         <PortfolioCard
                             itemImage="SOC"
                             itemTitle="SOC_Pop"
@@ -108,12 +118,10 @@ export default function Portfolio() {
 
                 </Box>
 
-                <Typography className="portfolioArea" variant="h4" sx={{mt: isMobile? '5%': '1.5%', mb: '10px', textAlign: 'center', fontSize: isMobile ? '25px' : '35x'}} >Watch this space!</Typography>
-                
-                {/* <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'baseline', mt: '10px', gap: '40px'}}>
+                <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'baseline', mt: '10px', gap: '40px'}}>
 
                     <Box sx={{display: 'flex', flexDirection: 'column',}}>
-                    <Typography variant="h5" sx={{mb: '10px', textAlign: 'center'}} >Selected hackathons and smaller projects</Typography>
+                    <Typography variant="h5" sx={{mb: '10px', mt: '5vh', textAlign: 'center'}} >Smaller projects - websites and prototypes</Typography>
                     <Box sx={{display: 'flex', flexDirection: 'row', gap: '20px'}}>
 
                         <PortfolioCard
@@ -133,8 +141,8 @@ export default function Portfolio() {
                             appLink=""
                         />
                     </Box>
-                </Box> */}
-                {/* </Box> */}
+                </Box> 
+                 </Box>
             <Typography id="portfolioFooter" sx={{ color: 'white', backgroundColor: '#003049', mt: isMobile? '30px' : '48px', padding: '10px', display: 'flex', justifyContent: 'center' }}>Created by Neil Brooks, 2023</Typography>
 
         </div>

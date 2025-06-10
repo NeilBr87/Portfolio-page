@@ -11,7 +11,9 @@ import haccio from './Haccio.JPG';
 import Mysite from './Mysite.JPG';
 import SymptomSense from './SymptomSense.JPG';
 import SOC from './SOC.JPG';
-import Hitcher from './Hitcher.JPG';
+import MyFirstNumbers from './Myfirstnumbers.JPG';
+import PullingStrings from './Pulling Strings.JPG';
+import Hitcher from './Hitcher.JPG'
 
 export default function PortfolioCard(props) {
   const theme = useTheme();
@@ -33,8 +35,15 @@ export default function PortfolioCard(props) {
     if (itemImage === 'SymptomSense') {
         return SymptomSense;
     }
-    if (itemImage === 'Hitcher') {
-        return Hitcher;
+    if (itemImage === 'MyFirstNumbers') {
+        return MyFirstNumbers;
+    }
+    if (itemImage === "Pulling Strings") {
+      return PullingStrings;
+    }
+
+    if (itemImage === "Hitcher") {
+      return Hitcher;
     }
 
     return '';
@@ -43,13 +52,13 @@ export default function PortfolioCard(props) {
   return (
     <div>
 <Box style={{ width: isMobile? '280px' : '320px', backgroundColor: 'white', padding: '20px', boxShadow: '0px 3px 5px rgba(0.5, 0.5, 0.7, 0.7)', borderRadius: '10px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <img style={{ width: isMobile? '280px' : '320px', borderRadius: '10px', border: '1px solid black' }} src={imageLink} alt="Portfolio Item" />
+      <img style={{ width: isMobile? '280px' : '320px', height: isMobile? '17vh' : '18vh', borderRadius: '10px', border: '1px solid black' }} src={imageLink} alt="Portfolio Item" />
       <Typography variant="h5" sx={{textAlign: 'center'}}>{props.itemTitle}</Typography>
        <Box sx={{height: isMobile? '220px' : '200px', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <Typography sx={{fontSize: '14px', textAlign: 'center', pb: '10px'}}>{props.itemDescription}</Typography>
-        <Typography sx={{fontSize: '14px', textAlign: 'center'}}>{props.itemDesc2}</Typography>
+        <Typography sx={{fontSize: '14px', textAlign: 'center', mb: '30px'}}>{props.itemDesc2}</Typography>
        </Box>
-      <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px'}}>
+      <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: '10px'}} style={{marginTop: isMobile ? '26px' : '10px'}}>
         <Link href={props.githubLink}><GitHubIcon className="socialIcons" sx={{ fontSize: '40px', color: 'black' }} /></Link>
         <Typography>Visit the repo</Typography>
        </Box>
