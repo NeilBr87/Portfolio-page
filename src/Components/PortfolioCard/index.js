@@ -14,6 +14,8 @@ import SOC from './SOC.JPG';
 import MyFirstNumbers from './Myfirstnumbers.JPG';
 import PullingStrings from './Pulling Strings.JPG';
 import Hitcher from './Hitcher.JPG'
+import Ourtraveljournals from './Our Travel Journals.png'
+import GildedGrove from './GildedGrove.png'
 
 export default function PortfolioCard(props) {
   const theme = useTheme();
@@ -46,6 +48,13 @@ export default function PortfolioCard(props) {
       return Hitcher;
     }
 
+    if (itemImage === "Ourtraveljournals") {
+      return Ourtraveljournals;
+    }
+
+    if (itemImage === "GildedGrove") {
+      return GildedGrove
+    }
     return '';
   }, [itemImage]);
 

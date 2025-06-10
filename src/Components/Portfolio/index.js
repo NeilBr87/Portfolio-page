@@ -93,15 +93,7 @@ export default function Portfolio() {
                             githubLink="https://github.com/NeilBr87/Hitcher"
                             appLink="https://hitcher.netlify.app/"
                         />
-{/*                         
-                        <PortfolioCard 
-                            itemImage="Mysite" 
-                            itemTitle="My portfolio page" 
-                            itemDescription="My first proper project after finishing the bootcamp - this very website!" 
-                            itemDesc2="This site has been compiled with React using MaterialUI for formatting and responsiveness. It has two goals: to give prospective employers and others a sense of who I am, and to give me a chance to keep my React skills strong."
-                            githubLink="https://github.com/NeilBr87/Portfolio-page"
-                            appLink="/"
-                            /> */}
+                        
                         <PortfolioCard
                             itemImage="SOC"
                             itemTitle="SOC_Pop"
@@ -121,25 +113,34 @@ export default function Portfolio() {
                 <Box sx={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'baseline', mt: '10px', gap: '40px'}}>
 
                     <Box sx={{display: 'flex', flexDirection: 'column',}}>
-                    <Typography variant="h5" sx={{mb: '10px', mt: '5vh', textAlign: 'center'}} >Smaller projects - websites and prototypes</Typography>
+                    <Typography variant="h5" sx={{mb: '10px', mt: '5vh', textAlign: 'center'}} >Websites and prototype projects</Typography>
                     <Box sx={{display: 'flex', flexDirection: 'row', gap: '20px'}}>
 
                         <PortfolioCard
-                            itemImage="SOC"
-                            itemTitle="Mapfinder"
-                            itemDescription="SOC_Pop was the first React project I attempted solo. I started off very confused about React hooks, so I thought that a project would be a good way to learn and get into good practice."
-                            itemDesc2="SOC_Pop is a population guessing game that can either be played as a group or as a scored single player. The player has to guess the highest population out of two randomly-generated countries."
-                            githubLink=""
-                            appLink=""
+                            itemImage="GildedGrove"
+                            itemTitle="Gildred Grove"
+                            itemDescription="A smallscale single page project I worked on recently - this was a very basic prototype of a page I worked on for my friend who was thinking about starting a jewellery side business. "
+                            itemDesc2="A straightforward site project responsive for both desktop and mobile."
+                            githubLink="https://github.com/NeilBr87/GildedGrove"
+                            appLink="https://gildedgrove.netlify.app/"
                         />
                         <PortfolioCard
-                            itemImage="SOC"
-                            itemTitle="MarsLENS"
-                            itemDescription="SOC_Pop was the first React project I attempted solo. I started off very confused about React hooks, so I thought that a project would be a good way to learn and get into good practice."
-                            itemDesc2="SOC_Pop is a population guessing game that can either be played as a group or as a scored single player. The player has to guess the highest population out of two randomly-generated countries."
-                            githubLink=""
-                            appLink=""
+                            itemImage="Ourtraveljournals"
+                            itemTitle="Travel Journal"
+                            itemDescription="I get a lot out of both writing and travelling, and keeping a travel journal is one way I've managed to combine both passions. But I wanted to do something more elaborate than a Word document, and I thought a React app that I could fully customise was a great avenue for this."
+                            itemDesc2="My travel journal is my most-commonly updated project as I write up more adventures."
+                            githubLink="https://github.com/NeilBr87/America-Journal"
+                            appLink="https://ourtraveljournals.netlify.app/"
                         />
+                        <PortfolioCard 
+                            itemImage="Mysite" 
+                            itemTitle="My portfolio page" 
+                            itemDescription="My first small project after finishing the bootcamp - this very website!" 
+                            itemDesc2="This site has been compiled with React using MaterialUI for formatting and responsiveness. It has two goals: to give prospective employers and others a sense of who I am, and to give me a chance to keep my React skills strong."
+                            githubLink="https://github.com/NeilBr87/Portfolio-page"
+                            appLink="/"
+                            />
+                        
                     </Box>
                 </Box> 
                  </Box>
