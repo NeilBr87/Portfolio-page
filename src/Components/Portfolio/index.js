@@ -70,11 +70,11 @@ export default function Portfolio() {
                     <Box sx={{display: 'flex', flexDirection: isMobile? 'column' : 'row', gap: '20px'}}>
                         <PortfolioCard 
                             itemImage="Hitcher"
-                            itemTitle="Hitcher"
-                            itemDescription="Hitcher is an attempt to go back into the very early motivation for my learning to code - creating text adventures with complex logic. In Hitcher, you travel across Europe via hitchiking, managing your health, food, and money as you go."
-                            itemDesc2="The version included is an ongoing prototype primarily designed for mobile but with limited desktop support."
-                            githubLink="https://github.com/NeilBr87/Hitcher"
-                            appLink="https://hitcher.netlify.app/"
+                            itemTitle="My First Numbers"
+                            itemDescription="My First Numbers started life as a simple countng game I created for my young nephew. He was uninterested in the counting games on his tablet so I made an alternative that would keep his interest by using images of family members as the objects."
+                            itemDesc2="I wanted to make it a more general game and replaced the family member details - and audio - with generic, adaptable examples."
+                            githubLink="https://github.com/NeilBr87/My-First-Numbers"
+                            appLink="https://my-first-numbers.netlify.app/"
                         />
                         <PortfolioCard
                             itemImage="SymptomSense"
